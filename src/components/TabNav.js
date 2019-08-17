@@ -14,16 +14,16 @@ export default function TabNav() {
     return(
         <TabStyle>
             <NavLink exact={true} to='/' activeClassName='activeBackground'>
-                Home
+                <h2>Home</h2>
             </NavLink>
             <NavLink to='/characters' activeClassName='activeBackground'>
-                Characters
+                <h2>Characters</h2>
             </NavLink>
             <NavLink to='/locations' activeClassName='activeBackground'>
-                Location
+                <h2>Location</h2>
             </NavLink>
             <NavLink to='/episodes' activeClassName='activeBackground'>
-                Episodes
+                <h2>Episodes</h2>
             </NavLink>
         </TabStyle>
     );

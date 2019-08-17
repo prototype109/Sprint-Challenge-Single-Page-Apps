@@ -18,7 +18,7 @@ export default function TabNav() {
                 </NavLink>
             </Tab.Pane>
             <Tab.Pane>
-                <NavLink to='/location'>
+                <NavLink to='/locations'>
                     Location
                 </NavLink>
             </Tab.Pane>

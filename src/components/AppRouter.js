@@ -4,12 +4,12 @@ import WelcomePage from './WelcomePage';
 import CharacterList from './CharacterList';
 import LocationList from './LocationsList';
 
-function AppRouter(){
+function AppRouter({name}){
     return(
         <div>
             <Route path='/' component={WelcomePage} />
-            <Route path='/characters' component={CharacterList} />
-            <Route path='/locations' component={LocationList} />
+            <Route path='/characters' render={(props) => <CharacterList {...props} name={name} />} />
+            <Route path='/locations' render={(props) => <LocationList {...props} name={name} />} />
         </div>
     );
 }

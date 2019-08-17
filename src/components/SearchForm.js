@@ -13,7 +13,7 @@ export default function SearchForm({ onSearch }) {
       <form onSubmit={(e) => {
         e.preventDefault();
         onSearch(name.name);
-        setName({});
+        setName({name: ''});
         }}>
         <input
           onChange={handleInputChange}
